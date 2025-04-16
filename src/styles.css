@@ -8,6 +8,7 @@
     --accent-color: #1a2f61;
     --background-color: var(--primary-color);
     --text-color: white;
+    --font: 'Poppins', sans-serif;
 }
 
 app-root {
@@ -20,7 +21,7 @@ app-root {
 
 /* Schriftart */
 body, html {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     color: var(--text-color);
     margin: 0;
     padding: 0;

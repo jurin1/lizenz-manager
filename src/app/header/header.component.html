@@ -3,10 +3,19 @@
         <a href="/">Lizenz Manager</a>
     </div>
     <nav id="desktop-nav">
-        <a routerLink="/">Home</a>
-        <a routerLink="/impressum">Impressum</a>
+        <a routerLink="/orders">
+            <mat-icon>shopping_bag</mat-icon>
+            <span class="badge" *ngIf="orderCount > 0">{{ orderCount }}</span>
+        </a>
+        <a routerLink="/notifications">
+            <mat-icon>notifications</mat-icon>
+            <span class="badge" *ngIf="notificationCount > 0">{{ notificationCount }}</span>
+        </a>
+
+
+        <!-- <a routerLink="/impressum">Impressum</a>
         <a routerLink="/datenschutz">Datenschutz</a>
-        <a routerLink="/dashboard">Dashboard</a>
+        <a routerLink="/dashboard">Dashboard</a> -->
         <button *ngIf="isLoggedIn" (click)="logout()">
             Logout
         </button>

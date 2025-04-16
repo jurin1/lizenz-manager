@@ -6,6 +6,9 @@
 /out-tsc
 /bazel-out
 .env
+.github
+.vscode
+up.js
 
 # Node
 /node_modules
