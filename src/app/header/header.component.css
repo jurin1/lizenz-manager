@@ -1,0 +1,59 @@
+header {
+  position: relative;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+}
+
+#desktop-nav{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* #desktop-nav a::after {
+  content: "|";
+  margin-left: 10px;
+}
+
+#desktop-nav a:last-of-type::after {
+  content: ""; /* Entfernt das | beim letzten <a>-Element 
+} */
+
+#desktop-nav a:hover::after {
+  content: ""; /* Entfernt das | beim Hover */
+}
+
+#desktop-nav a {
+  text-decoration: none; 
+}
+
+a{
+  padding: 8px 15px;
+}
+
+a:hover{
+  background-color: var(--accent-color);
+  border-radius: 15px;
+  content: "";
+}
+
+#mobile-menu-button{
+  display: none;
+}
+
+#menu-button {
+  font-size: 24px;
+}
+
+#mobile-menu {
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  #mobile-menu-button {
+    display: flex;
+  }
+}

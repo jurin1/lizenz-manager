@@ -1,0 +1,33 @@
+<header class="header">
+    <div>
+        <a href="/">Lizenz Manager</a>
+    </div>
+    <nav id="desktop-nav">
+        <a routerLink="/">Home</a>
+        <a routerLink="/impressum">Impressum</a>
+        <a routerLink="/datenschutz">Datenschutz</a>
+        <a routerLink="/dashboard">Dashboard</a>
+        <button *ngIf="isLoggedIn" (click)="logout()">
+            Logout
+        </button>
+    </nav>
+    <div id="mobile-menu-button">
+        <button id="menu-button">
+            <span class="material-icons">menu</span>
+        </button>
+    </div>
+    <div id="mobile-menu-overlay" *ngIf="isMenuOpen">
+        <div>
+            <button (click)="toggleMenu()">
+                <span class="material-icons">close</span>
+            </button>
+            <a routerLink="/">Home</a>
+            <a routerLink="/impressum">Impressum</a>
+            <a routerLink="/datenschutz">Datenschutz</a>
+            <a routerLink="/dashboard">Dashboard</a>
+            <button *ngIf="isLoggedIn" (click)="logout()">
+                Logout
+            </button>
+        </div>
+    </div>
+</header>

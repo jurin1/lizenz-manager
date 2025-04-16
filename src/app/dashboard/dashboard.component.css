@@ -1,0 +1,49 @@
+
+.dashboard {
+display: flex;
+height: auto;
+background-color: var(--secondary-color);
+width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+.dashboard h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.dashboard section {
+    padding: 0 25px
+}
+
+
+.dashboard .tiles {
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard .tile {
+    flex: 1;
+    background: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: auto;
+}
+
+.dashboard .tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+

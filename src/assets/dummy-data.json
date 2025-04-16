@@ -1,0 +1,77 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "name": "Gruppe 1",
+      "address": "Musterstraße 1, 12345 Musterstadt",
+      "contact": "kontakt@gruppe1.de"
+    },
+    {
+      "id": 2,
+      "name": "Gruppe 2",
+      "address": "Beispielweg 2, 54321 Beispielstadt",
+      "contact": "kontakt@gruppe2.de"
+    },
+    {
+      "id": 3,
+      "name": "Gruppe 3",
+      "address": "Testallee 3, 98765 Teststadt",
+      "contact": "kontakt@gruppe3.de"
+    }
+  ],
+  "users": [
+    { "id": 1, "name": "Max Mustermann", "groupId": 1 },
+    { "id": 2, "name": "Erika Musterfrau", "groupId": 2 },
+    { "id": 3, "name": "Hans Beispiel", "groupId": 3 }
+  ],
+  "keys": [
+    {
+      "id": 1,
+      "icon": "https://placehold.co/25x25",
+      "provider": "AWS",
+      "value": "Key1-ABC"
+    },
+    {
+      "id": 2,
+      "icon": "https://placehold.co/25x25",
+      "provider": "AWS",
+      "value": "Key2-DEF"
+    },
+    {
+      "id": 3,
+      "icon": "https://placehold.co/25x25",
+      "provider": "AWS",
+      "value": "Key3-GHI"
+    },
+    {
+      "id": 4,
+      "icon": "https://placehold.co/25x25",
+      "provider": "Windows",
+      "value": "Key2-DEF"
+    },
+    {
+      "id": 5,
+      "icon": "https://placehold.co/25x25",
+      "provider": "Windows",
+      "value": "Key3-GHI"
+    },
+    {
+      "id": 6,
+      "icon": "https://placehold.co/25x25",
+      "provider": "Linux",
+      "value": "Key1-ABC"
+    },
+    {
+      "id": 7,
+      "icon": "https://placehold.co/25x25",
+      "provider": "Linux",
+      "value": "Key2-DEF"
+    },
+    {
+      "id": 8,
+      "icon": "https://placehold.co/25x25",
+      "provider": "Linux",
+      "value": "Key3-GHI"
+    }
+  ]
+}
