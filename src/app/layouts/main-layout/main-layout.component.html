@@ -1,0 +1,41 @@
+<!-- auth-layout.component.html -->
+<main class="page-content">
+    <mat-drawer-container class="main-container" autosize>
+
+        <!-- Die Sidebar -->
+        <mat-drawer #drawer class="sidenav" mode="side" opened>
+            <nav class="sidebar-nav">
+                <a routerLink="/dashboard" routerLinkActive="router-link-active">Dashboard</a>
+                <a routerLink="/settings" routerLinkActive="router-link-active">Einstellungen</a>
+                <!-- Weitere Links für eingeloggte User -->
+            </nav>
+            <div class="sidebar-footer">
+                <!-- Footer-Inhalt der Sidebar -->
+            </div>
+        </mat-drawer>
+
+        <!-- Der Hauptinhaltsbereich -->
+        <mat-drawer-content class="main-content">
+            <mat-toolbar class="content-toolbar">
+                <button mat-icon-button (click)="drawer.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <!-- Toolbar-Inhalt -->
+                <div class="custom-search-bar">
+                    <label for="search-input" class="search-label"></label>
+                    <input id="search-input" type="text" class="search-input" placeholder="Suchen...">
+                    <button class="search-button">
+                        <mat-icon>search</mat-icon>
+                    </button>
+                </div>
+            </mat-toolbar>
+
+            <!-- HIER kommt der Inhalt der eingeloggten Seiten rein -->
+            <div class="router-outlet-wrapper">
+                <router-outlet></router-outlet> <!-- Der geschachtelte Router-Outlet -->
+            </div>
+
+        </mat-drawer-content>
+
+    </mat-drawer-container>
+</main>

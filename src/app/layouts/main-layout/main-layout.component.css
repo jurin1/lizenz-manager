@@ -1,0 +1,130 @@
+.page-content {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+.sidenav {
+    width: 240px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.sidebar-nav a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    color: var(--text-color);
+}
+
+
+
+.sidebar-nav a:hover {
+    background-color: var(--accent-color);
+    border-radius: 15px;
+}
+
+.sidebar-nav a.active-link {
+    font-weight: bold;
+}
+
+/* Sidebar-Navigation: Aktive Links basierend auf der Route hervorheben */
+.sidebar-nav a.router-link-active {
+    background-color: var(--accent-color);
+    border-radius: 15px;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 15px;
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: var(--text-color);
+}
+
+/* Toolbar im Inhaltsbereich */
+.content-toolbar {
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    flex-shrink: 0;
+
+}
+
+.content-toolbar span {
+    margin-left: 15px;
+}
+
+/* Wrapper für den Router-Outlet */
+.router-outlet-wrapper {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: var(--secondary-color);
+}
+
+mat-icon {
+    color: var(--text-color);
+}
+
+.custom-search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: var(--text-color);
+    width: 70%;
+    background-color: var(--primary-color);
+    font-family: var(--font);
+}
+
+.search-label {
+    font-size: 14px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:hover {
+    background-color: var(--accent-color);
+}
+
+.search-button mat-icon {
+    font-size: 24px;
+    align-items: center;
+    display: flex;
+}
